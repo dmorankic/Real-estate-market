@@ -29,6 +29,7 @@ namespace Real_estate_market.Services
         {
             var set = Context.Set<TDb>();
             var entity = set.Find(id);
+            Console.WriteLine("aaaaa");
             if(entity != null)
             {
                 Mapper.Map(update, entity);
